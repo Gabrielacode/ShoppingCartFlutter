@@ -12,7 +12,7 @@ class CartItem {
   double price;
   int rating;
 
-  CartItem({ this.id=0,required this.nameOfItem,required this.price,required this.rating});
+  CartItem({ this.id=0, this.nameOfItem ="",this.price = 0,this.rating =0});
   factory CartItem.fromMap(Map<String,Object?> results){
     return CartItem(
         id:results[ID_COLUMN] as int,
