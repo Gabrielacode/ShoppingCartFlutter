@@ -7,7 +7,7 @@ class CartItem {
   static String PRICE_COLUMN ='price';
   static String RATING_COLUMN ='rating';
 
-  int id ;
+  int? id ;
   String nameOfItem ;
   double price;
   int rating;

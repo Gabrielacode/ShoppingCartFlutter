@@ -26,7 +26,7 @@ class AddCartPage extends StatelessWidget {
           var rating = cartCardKey.currentState?.rating??0;
 
           //We need to create our custom cart card item
-          var cartItem = CartItem(nameOfItem: name,price: price,rating: rating);
+          var cartItem = CartItem(id:null,nameOfItem: name,price: price,rating: rating);
           //Then we insert it to the db
           context.read<CartController>().insertCartItem(cartItem);
           //Then we pop from this page
