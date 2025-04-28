@@ -7,7 +7,7 @@ class CartDAO{
   CartDAO({required this. database});
 
  Future<void>  insertCartItem(CartItem item)async{
-    await database.insert(CartItem.TABLE_NAME, item.toMap(),conflictAlgorithm: ConflictAlgorithm.replace);
+    await database.insert(CartItem.TABLE_NAME, item.toMap(),);
   }
 
  Future<void> deleteCartItem(CartItem item)async{
